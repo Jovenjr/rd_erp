@@ -1,0 +1,61 @@
+{
+ "allow_edit": 1,
+ "allow_multiple": 0,
+ "creation": "2024-01-01 00:00:00.000000",
+ "doc_type": "DGII Customer",
+ "doctype": "Web Form",
+ "edit_perm": 0,
+ "field_web_form": [
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rnc",
+   "fieldtype": "Data",
+   "label": "RNC",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "customer_type",
+   "fieldtype": "Select",
+   "label": "Customer Type",
+   "options": "Individual\nCompany\nGovernment"
+  },
+  {
+   "fieldname": "sync_with_dgii",
+   "fieldtype": "Check",
+   "label": "Sync with DGII"
+  }
+ ],
+ "has_web_permission": 1,
+ "is_standard": 1,
+ "module": "CSF RD",
+ "name": "DGII Customer Registration",
+ "owner": "Administrator",
+ "published": 1,
+ "route": "dgii-customer-registration",
+ "show_sidebar": 1,
+ "success_message": "Customer registered successfully!",
+ "success_url": "/dgii-customer-registration",
+ "title": "DGII Customer Registration"
+}

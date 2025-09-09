@@ -1,0 +1,154 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-01-01 00:00:00.000000",
+ "default_view": "List",
+ "doctype": "DGII Settings",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "company",
+  "environment",
+  "dgii_server_url",
+  "certificate_section",
+  "certificate_path",
+  "certificate_content",
+  "certificate_password",
+  "rnc_company",
+  "company_name",
+  "test_connection_button",
+  "column_break_11",
+  "api_configuration",
+  "api_key",
+  "api_secret",
+  "timeout",
+  "retry_attempts"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "DGII-SET-.YYYY.-.#####",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "environment",
+   "fieldtype": "Select",
+   "label": "Environment",
+   "options": "Test\nCert\nProduction",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dgii_server_url",
+   "fieldtype": "Data",
+   "label": "DGII Server URL",
+   "reqd": 1,
+   "default": "http://localhost:3000"
+  },
+  {
+   "fieldname": "certificate_section",
+   "fieldtype": "Section Break",
+   "label": "Certificate Configuration"
+  },
+  {
+   "fieldname": "certificate_path",
+   "fieldtype": "Attach",
+   "label": "Certificate File (.p12)"
+  },
+  {
+   "fieldname": "certificate_content",
+   "fieldtype": "Long Text",
+   "label": "Certificate Content (Base64)"
+  },
+  {
+   "fieldname": "certificate_password",
+   "fieldtype": "Password",
+   "label": "Certificate Password",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rnc_company",
+   "fieldtype": "Data",
+   "label": "Company RNC",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "test_connection_button",
+   "fieldtype": "Button",
+   "label": "Test Connection"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "api_configuration",
+   "fieldtype": "Section Break",
+   "label": "API Configuration"
+  },
+  {
+   "fieldname": "api_key",
+   "fieldtype": "Data",
+   "label": "API Key"
+  },
+  {
+   "fieldname": "api_secret",
+   "fieldtype": "Password",
+   "label": "API Secret"
+  },
+  {
+   "fieldname": "timeout",
+   "fieldtype": "Int",
+   "label": "Timeout (seconds)",
+   "default": 30
+  },
+  {
+   "fieldname": "retry_attempts",
+   "fieldtype": "Int",
+   "label": "Retry Attempts",
+   "default": 3
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "CSF RD",
+ "name": "DGII Settings",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

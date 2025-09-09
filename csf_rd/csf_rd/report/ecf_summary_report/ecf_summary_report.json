@@ -1,0 +1,51 @@
+{
+ "add_total_row": 1,
+ "columns": [],
+ "creation": "2024-01-01 00:00:00.000000",
+ "default_report": "eCF Summary Report",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "mandatory": 1,
+   "options": "Company"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nSent\nAccepted\nRejected\nError"
+  },
+  {
+   "fieldname": "rnc_comprador",
+   "fieldtype": "Data",
+   "label": "RNC Comprador"
+  }
+ ],
+ "idx": 0,
+ "is_standard": "No",
+ "json": "{}",
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "CSF RD",
+ "name": "eCF Summary Report",
+ "owner": "Administrator",
+ "query_report": 1,
+ "ref_doctype": "eCF Document",
+ "report_name": "eCF Summary Report",
+ "report_type": "Query Report"
+}

@@ -1,0 +1,132 @@
+{
+ "charts": [
+  {
+   "chart_name": "eCF Documents by Status",
+   "chart_type": "Donut",
+   "doctype": "eCF Document",
+   "filters_json": "{}",
+   "group_by_type": "Count",
+   "is_public": 1,
+   "is_standard": 1,
+   "name": "eCF Documents by Status",
+   "number_of_groups": 0,
+   "owner": "Administrator",
+   "report_name": "eCF Summary Report",
+   "type": "Report"
+  },
+  {
+   "chart_name": "Monthly eCF Volume",
+   "chart_type": "Line",
+   "doctype": "eCF Document",
+   "filters_json": "{\"from_date\":\"2024-01-01\",\"to_date\":\"2024-12-31\"}",
+   "group_by_type": "Count",
+   "is_public": 1,
+   "is_standard": 1,
+   "name": "Monthly eCF Volume",
+   "number_of_groups": 0,
+   "owner": "Administrator",
+   "report_name": "eCF Summary Report",
+   "type": "Report"
+  }
+ ],
+ "creation": "2024-01-01 00:00:00.000000",
+ "default_page": "DGII Dashboard",
+ "doctype": "Workspace",
+ "extends": "Accounting",
+ "extends_another_page": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "links": [
+  {
+   "dependencies": "[]",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "DGII Settings",
+   "link_to": "DGII Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "[]",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "eCF Documents",
+   "link_to": "eCF Document",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "[]",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "DGII Customers",
+   "link_to": "DGII Customer",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "[]",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "NCF Configuration",
+   "link_to": "NCF Configuration",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "[]",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "eCF Summary Report",
+   "link_to": "eCF Summary Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "[]",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "DGII Tax Report",
+   "link_to": "DGII Tax Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "module": "CSF RD",
+ "name": "República Dominicana",
+ "owner": "Administrator",
+ "parent_page": "",
+ "shortcuts": [
+  {
+   "color": "#FF6B6B",
+   "format": "Shortcut",
+   "icon": "file-invoice",
+   "label": "New eCF Document",
+   "link_to": "eCF Document",
+   "type": "DocType"
+  },
+  {
+   "color": "#4ECDC4",
+   "format": "Shortcut",
+   "icon": "cog",
+   "label": "DGII Settings",
+   "link_to": "DGII Settings",
+   "type": "DocType"
+  },
+  {
+   "color": "#45B7D1",
+   "format": "Shortcut",
+   "icon": "chart-line",
+   "label": "eCF Summary Report",
+   "link_to": "eCF Summary Report",
+   "type": "Report"
+  }
+ ],
+ "title": "República Dominicana"
+}

@@ -1,0 +1,137 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-01-01 00:00:00.000000",
+ "default_view": "List",
+ "doctype": "DGII Customer",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "company",
+  "rnc",
+  "customer_name",
+  "customer_type",
+  "is_authorized",
+  "dgii_response",
+  "column_break_7",
+  "contact_person",
+  "email",
+  "phone",
+  "address",
+  "section_break_12",
+  "sync_with_dgii_button",
+  "validate_rnc_button"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "DGII-CUST-.YYYY.-.#####",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rnc",
+   "fieldtype": "Data",
+   "label": "RNC",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_type",
+   "fieldtype": "Select",
+   "label": "Customer Type",
+   "options": "Individual\nCompany\nGovernment"
+  },
+  {
+   "fieldname": "is_authorized",
+   "fieldtype": "Check",
+   "label": "Is Authorized"
+  },
+  {
+   "fieldname": "dgii_response",
+   "fieldtype": "Long Text",
+   "label": "DGII Response",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contact_person",
+   "fieldtype": "Data",
+   "label": "Contact Person"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Long Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break",
+   "label": "Actions"
+  },
+  {
+   "fieldname": "sync_with_dgii_button",
+   "fieldtype": "Button",
+   "label": "Sync with DGII"
+  },
+  {
+   "fieldname": "validate_rnc_button",
+   "fieldtype": "Button",
+   "label": "Validate RNC"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "CSF RD",
+ "name": "DGII Customer",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

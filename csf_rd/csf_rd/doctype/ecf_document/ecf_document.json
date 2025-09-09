@@ -1,0 +1,170 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-01-01 00:00:00.000000",
+ "default_view": "List",
+ "doctype": "eCF Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "company",
+  "sales_invoice",
+  "ncf",
+  "rnc_emisor",
+  "rnc_comprador",
+  "fecha_emision",
+  "monto_total",
+  "codigo_seguridad",
+  "status",
+  "track_id",
+  "column_break_11",
+  "dgii_response",
+  "qr_code_url",
+  "creation_date",
+  "section_break_15",
+  "send_to_dgii_button",
+  "check_status_button",
+  "generate_qr_button"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "eCF-.YYYY.-.#####",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sales_invoice",
+   "fieldtype": "Link",
+   "label": "Sales Invoice",
+   "options": "Sales Invoice",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ncf",
+   "fieldtype": "Data",
+   "label": "NCF",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rnc_emisor",
+   "fieldtype": "Data",
+   "label": "RNC Emisor",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rnc_comprador",
+   "fieldtype": "Data",
+   "label": "RNC Comprador",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fecha_emision",
+   "fieldtype": "Date",
+   "label": "Fecha Emisión",
+   "reqd": 1
+  },
+  {
+   "fieldname": "monto_total",
+   "fieldtype": "Currency",
+   "label": "Monto Total",
+   "reqd": 1
+  },
+  {
+   "fieldname": "codigo_seguridad",
+   "fieldtype": "Data",
+   "label": "Código Seguridad"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nSent\nAccepted\nRejected\nError",
+   "default": "Draft"
+  },
+  {
+   "fieldname": "track_id",
+   "fieldtype": "Data",
+   "label": "Track ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dgii_response",
+   "fieldtype": "Long Text",
+   "label": "DGII Response",
+   "read_only": 1
+  },
+  {
+   "fieldname": "qr_code_url",
+   "fieldtype": "Data",
+   "label": "QR Code URL",
+   "read_only": 1
+  },
+  {
+   "fieldname": "creation_date",
+   "fieldtype": "Datetime",
+   "label": "Creation Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break",
+   "label": "Actions"
+  },
+  {
+   "fieldname": "send_to_dgii_button",
+   "fieldtype": "Button",
+   "label": "Send to DGII"
+  },
+  {
+   "fieldname": "check_status_button",
+   "fieldtype": "Button",
+   "label": "Check Status"
+  },
+  {
+   "fieldname": "generate_qr_button",
+   "fieldtype": "Button",
+   "label": "Generate QR Code"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "CSF RD",
+ "name": "eCF Document",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

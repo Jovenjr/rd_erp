@@ -1,0 +1,30 @@
+[
+ {
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "Selling Settings",
+  "idx": 1,
+  "modified": "2024-01-01 00:00:00.000000",
+  "modified_by": "Administrator",
+  "name": "Selling Settings",
+  "parent": "Selling Settings",
+  "parent_doctype": "Selling Settings",
+  "parentfield": "selling_settings",
+  "parenttype": "Selling Settings",
+  "setting": "Allow Multiple Invoices Against Delivery Note",
+  "value": "0"
+ },
+ {
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "Selling Settings",
+  "idx": 2,
+  "modified": "2024-01-01 00:00:00.000000",
+  "modified_by": "Administrator",
+  "name": "Selling Settings",
+  "parent": "Selling Settings",
+  "parent_doctype": "Selling Settings",
+  "parentfield": "selling_settings",
+  "parenttype": "Selling Settings",
+  "setting": "Allow Multiple Delivery Notes Against Sales Invoice",
+  "value": "0"
+ }
+]
