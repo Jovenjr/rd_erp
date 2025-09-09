@@ -17,7 +17,7 @@ fixtures = [
         "doctype": "Custom Field",
         "filters": [               
             ["is_system_generated", "=", 0],
-            ["module", "=", "csf_rd"],
+            ["module", "=", "CSF RD"],
         ],
     },
     {
