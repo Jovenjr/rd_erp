@@ -60,10 +60,4 @@ jinja = {
     ]
 }
 
-# Override DocType classes for custom controllers
-override_doctype_class = {
-    "DGII Customer": "csf_rd.doctype.dgii_customer.dgii_customer.DGIICustomer",
-    "DGII Settings": "csf_rd.doctype.dgii_settings.dgii_settings.DGIISettings", 
-    "eCF Document": "csf_rd.doctype.ecf_document.ecf_document.ECFDocument",
-    "NCF Configuration": "csf_rd.doctype.ncf_configuration.ncf_configuration.NCFConfiguration"
-}
+# NO override_doctype_class - Usar controladores estándar de Frappe
