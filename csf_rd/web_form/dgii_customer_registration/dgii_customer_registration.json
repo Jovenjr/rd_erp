@@ -49,7 +49,7 @@
  ],
  "has_web_permission": 1,
  "is_standard": 1,
- "module": "CSF RD",
+ "module": "csf_rd",
  "name": "DGII Customer Registration",
  "owner": "Administrator",
  "published": 1,

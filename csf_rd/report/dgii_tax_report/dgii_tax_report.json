@@ -2,7 +2,7 @@
  "add_total_row": 1,
  "columns": [],
  "creation": "2024-01-01 00:00:00.000000",
- "default_report": "eCF Summary Report",
+ "default_report": "DGII Tax Report",
  "disabled": 0,
  "docstatus": 0,
  "doctype": "Report",
@@ -29,11 +29,6 @@
    "fieldtype": "Select",
    "label": "Status",
    "options": "Draft\nSent\nAccepted\nRejected\nError"
-  },
-  {
-   "fieldname": "rnc_comprador",
-   "fieldtype": "Data",
-   "label": "RNC Comprador"
   }
  ],
  "idx": 0,
@@ -41,11 +36,11 @@
  "json": "{}",
  "modified": "2024-01-01 00:00:00.000000",
  "modified_by": "Administrator",
- "module": "CSF RD",
- "name": "eCF Summary Report",
+ "module": "csf_rd",
+ "name": "DGII Tax Report",
  "owner": "Administrator",
  "query_report": 1,
  "ref_doctype": "eCF Document",
- "report_name": "eCF Summary Report",
+ "report_name": "DGII Tax Report",
  "report_type": "Query Report"
 }
