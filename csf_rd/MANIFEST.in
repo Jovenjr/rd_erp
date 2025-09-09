@@ -1,0 +1,9 @@
+include README.md
+include LICENSE
+include requirements.txt
+include MANIFEST.in
+recursive-include csf_rd *.py *.js *.json *.md *.html *.css *.scss
+recursive-include csf_rd *.xlsx *.xls
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+recursive-exclude * .DS_Store

@@ -15,10 +15,10 @@ def validate_app_structure():
     
     # Verificar archivos esenciales
     essential_files = [
-        "csf_rd/__init__.py",
-        "csf_rd/hooks.py", 
-        "csf_rd/modules.txt",
-        "csf_rd/patches.txt",
+        "csf_rd/csf_rd/__init__.py",
+        "csf_rd/csf_rd/hooks.py", 
+        "csf_rd/csf_rd/modules.txt",
+        "csf_rd/csf_rd/patches.txt",
         "setup.py",
         "requirements.txt"
     ]
@@ -43,7 +43,7 @@ def validate_hooks():
     print("\n🔍 Validando hooks.py...")
     
     try:
-        with open("csf_rd/hooks.py", "r", encoding="utf-8") as f:
+        with open("csf_rd/csf_rd/hooks.py", "r", encoding="utf-8") as f:
             content = f.read()
         
         # Verificar elementos clave
@@ -72,7 +72,7 @@ def validate_doctypes():
     """Validar estructura de DocTypes"""
     print("\n🔍 Validando DocTypes...")
     
-    doctype_dir = Path("csf_rd/doctype")
+    doctype_dir = Path("csf_rd/csf_rd/doctype")
     if not doctype_dir.exists():
         print("❌ Directorio de DocTypes no encontrado")
         return False
@@ -114,7 +114,7 @@ def validate_reports():
     """Validar estructura de reportes"""
     print("\n🔍 Validando reportes...")
     
-    report_dir = Path("csf_rd/report")
+    report_dir = Path("csf_rd/csf_rd/report")
     if not report_dir.exists():
         print("❌ Directorio de reportes no encontrado")
         return False
